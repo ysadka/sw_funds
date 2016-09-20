@@ -1,0 +1,16 @@
+Edit Trip
+</br>
+</br>
+
+<%= form_for @trip, url: {action: :update} do |f| %>
+	<%= label_tag(:first_name, "First Name") %>
+	<%= f.text_field :first_name, input_html: {value: "#{@trip.first_name}"} %> </br>
+
+	<%= label_tag(:last_name, "Last Name") %>
+	<%= f.text_field :last_name, input_html: {value: "#{@trip.last_name}"} %> </br>
+
+	<%= label_tag(:confirmation_code, "Confirmation Code") %>
+	<%= f.text_field :confirmation_code, input_html: {value: "#{@trip.confirmation_code}"} %> </br>
+	
+	<%= f.button :submit %>
+<% end %>

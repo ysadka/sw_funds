@@ -1,4 +1,6 @@
 Show User's Trips
+</br>
+</br>
 
 <% @trips.each do |trip| %>
 
@@ -7,9 +9,13 @@ Show User's Trips
 <%= trip.confirmation_code %>
 <%= trip.funds_remaining %>
 <%= trip.exp_date %>
-<%= link_to edit_trip_path %>
-<%= link_to trip_path(:destroy) %>
+<%= link_to "Edit Trip", edit_trip_path(trip.id) %>
+<%= link_to "Delete Trip", trip_path, method: :delete %> 
+</br>
 
 <% end %>
+
+</br>
+</br>
 
 <%= link_to "Add New Trip", new_trip_path %>
