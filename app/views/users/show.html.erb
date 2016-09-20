@@ -7,9 +7,9 @@ Show User's Trips
 <%= trip.confirmation_code %>
 <%= trip.funds_remaining %>
 <%= trip.exp_date %>
-edit trip
-delete
+<%= link_to edit_trip_path %>
+<%= link_to trip_path(:destroy) %>
 
 <% end %>
 
-add new trip
+<%= link_to "Add New Trip", new_trip_path %>

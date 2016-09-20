@@ -2,12 +2,12 @@ class UsersController < ApplicationController
 
 	def create
 		user = User.new(user_params)
- 		user.password = params[:password]
- 		if user.save
+ 		if user.save!
 	 		flash[:notice] = "Account Created"
 	 		redirect_to login_path
 		else
-			redirect_to new_user_path alert: "Signup Failed"
+			@user = user
+			render :new, alert: "Signup Failed"
 		end
 	end
 
