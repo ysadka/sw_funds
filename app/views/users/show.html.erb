@@ -1,0 +1,15 @@
+Show User's Trips
+
+<% @trips.each do |trip| %>
+
+<%= trip.first_name %>
+<%= trip.last_name %>
+<%= trip.confirmation_code %>
+<%= trip.funds_remaining %>
+<%= trip.exp_date %>
+edit trip
+delete
+
+<% end %>
+
+add new trip
