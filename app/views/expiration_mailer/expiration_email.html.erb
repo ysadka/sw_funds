@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+
+<body>
+    <h1>You have Funds expiring!!</h1>
+    <p>
+      Your Southwest funds for <%= @trip.confirmation_code %> 
+      are expiring on <%= @trip.exp_date %>.<br>
+    </p>
+    <p>
+      Don't let your Funds go to waste! Visit <%= @url %> and book a flight. </br></br>
+      Nowhere to go? Book a flight of equal value, cancel it, and add the new trip to Travel Funds ;)
+
+    </p>
+    <p>Have a great day! </br>
+    	The Travel Funds Team
+    </p>
+  </body>
+
+</html>
