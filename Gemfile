@@ -8,6 +8,7 @@ gem 'pg', '~> 0.18'
 # gem 'puma', '~> 3.0'
 
 gem 'coffee-rails', '~> 4.2'
+gem "figaro"
 gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'sendgrid-rails', '~> 2.0'
