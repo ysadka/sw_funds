@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   post   "/login",  to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
 
+  delete "/thankyou", to: "statics#thankyou"
+
   resources :trips, except: :index
   resources :users, except: [:new, :index]
 
